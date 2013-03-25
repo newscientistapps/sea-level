@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Explore the future's rising seas | New Scientist</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/sealevel.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" media="all" href="components/jquery-ui-1.8.18.custom/css/smoothness/jquery-ui-1.8.18.custom.css">
+	<link rel="stylesheet" media="all" href="css/animation.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="components/jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="js/animation.js"></script>
+
+	<script type="text/javascript">
+		function setIframeSource() {
+			var theSelect = document.getElementById('location');
+			var theIframe = document.getElementById('myIframe');
+			var theUrl;
+				
+			theUrl = theSelect.options[theSelect.selectedIndex].value;
+			theIframe.src = theUrl;
+		}
+	</script>
+	
+	<script type="text/javascript">
+ 
+  		var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37549685-3']);
+		  _gaq.push(['_trackPageview']);
+ 
+		(function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+ 
+	</script>
+
+</head>
+
+<body>
+    
+    <div id="header">
+
+        <a href="http://www.newscientist.com/" target="_blank"><img src="img/NSlogo.png" alt="NS logo"/></a>
+        <p id="back"><a href="http://www.newscientist.com" target="_blank">Back to story</a></p>
+          
+    </div>
+
+	<div id="content">
+	
+	<h2>The coming flood: Explore the future's rising seas</h2>
+	<p>As the world warms, ice melts and water expands, sea level will rise – but faster in some places than others. These simulations, which assume warming in the middle of the range indicated by climate models, provide the best view yet of probable regional variation in sea level rise over the coming decades. Use the play button or slider to control the animations.</p>
+			
+		<form id="form1" name="form1" method="post" action="">
+		<label style="position:relative; left:305px">
+			Select <a href="scenarios.html" target="_parent">emissions scenario</a>:
+			<select name="location" id="location" onChange="setIframeSource()">
+  			<option VALUE="high.html">High</option>
+  			<option VALUE="low.html">Low</option>
+  			</select>
+		</label>
+		</form>
+		<br>
+		<iframe id="myIframe" src="high.html" width="840" height="560" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+    <br>
+    <br>
+    <br>
+    <p style="font-family: arial; font-size:12px; position: absolute; right: 70px; top:730px"><a href="scenarios.html" target="_parent">Source: M. Perrette, PIK<a/></p>
+
+    </div>
+                        
+    <div id="background">
+    
+    <img src="img/sea_large.jpg" alt="sea" height="100%" width="100%"/>
+    
+    </div>
+    	
+</body>
+</html>
+

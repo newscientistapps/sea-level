@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Explore the future's rising seas | New Scientist</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/sealevel.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" media="all" href="components/jquery-ui-1.8.18.custom/css/smoothness/jquery-ui-1.8.18.custom.css">
+    <link rel="stylesheet" media="all" href="css/animation.css">
+    <script src="js/jquery.min.js"></script>
+	<script src="components/jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="js/animation.js"></script>
+
+	<script type="text/javascript">
+		function setIframeSource() {
+			var theSelect = document.getElementById('location');
+			var theIframe = document.getElementById('myIframe');
+			var theUrl;
+				
+			theUrl = theSelect.options[theSelect.selectedIndex].value;
+			theIframe.src = theUrl;
+		}
+	</script>
+
+</head>
+
+<body>
+    
+    <div id="header">
+
+        <a href="http://www.newscientist.com/" target="_blank"><img src="img/NSlogo.png" alt="NS logo"/></a>
+        <p id="back"><a href="index.html" target="_parent">Back to animations</a></p>
+          
+    </div>
+
+	<div id="content">
+	
+	<h2>The coming flood: explore the future's rising seas</h2>
+	<p>These animations are based on the warming likely to occur under two scenarios for future greenhouse gas emissions, devised by the <a href="http://www.ipcc.ch/" target="_blank">Intergovernmental Panel on Climate Change</a>:</p>
+	
+	<p><b>High:</b> intensive use of fossil fuels resulting in very large CO<sub>2</sub> emissions. It is intended as a worst-case, business-as-usual scenario excluding policies to limit climate change. The median temperature projection for 2100 is around 5&nbsp;°C above pre-industrial averages.</p>
+ 
+	<p><b>Low:</b> aims at stabilising CO<sub>2</sub> concentration in the atmosphere by the middle of the century. It assumes policies to limit emissions but still passes the widely accepted threshold for "dangerous" climate change of a 2&nbsp;°C temperature rise, leading to a median warming of 2.6&nbsp;°C above pre-industrial averages by 2100.</p>
+
+	<p>The simulations use methods explained in <a href="http://www.earth-syst-dynam.net/4/11/2013/esd-4-11-2013.html" target="_blank">this paper</a> from <a href="http://www.pik-potsdam.de/members/perrette" target="_blank">Mahé Perrette</a> of the Potsdam Institute for Climate Impact Research in Germany and his colleagues, updated to account for new estimates of the contributions to sea level rise made by melting <a href="http://www.the-cryosphere-discuss.net/6/3101/2012/tcd-6-3101-2012.html" target="_blank">Greenland</a> and <a href="http://www.the-cryosphere-discuss.net/6/3447/2012/tcd-6-3447-2012.html" target="_blank">Antarctic</a> ice.
+
+    </div>
+                        
+    <div id="background">
+    
+    <img src="img/sea_large.jpg" alt="sea" height="100%" width="100%"/>
+    
+    </div>
+    
+
+	
+</body>
+</html>
+

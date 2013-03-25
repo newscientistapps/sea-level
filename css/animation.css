@@ -1,0 +1,54 @@
+
+
+#controls {
+	position: absolute;
+	left: 295px;
+	top: 5px;
+	width: 300px;
+	z-index: 1;
+	color: white;
+}
+
+#controls button, #controls p {
+	float: left;
+}
+
+#controls button {
+	font-size: 10px;
+}
+
+#controls p {
+	display: none;
+	padding: 4px 0 0 45px;
+}
+
+.animation {
+	width: 800px;
+	height: 560px;
+	position: relative;
+	overflow: hidden;
+}
+
+.animation .frames {
+	list-style-type: none;
+	width: 500000px;
+	height: 560px;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.animation .frame {
+	float: left;
+	width: 800px;
+	height: 560px;
+}
+
+.slider_container {
+	float: left;
+	left: 30px;
+    position: absolute;
+	width: 200px;
+	margin: 4px 0 0 20px;
+}
+
